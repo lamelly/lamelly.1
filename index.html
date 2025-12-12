@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Информационная безопасность - МИР</title>
+    
+    <!-- Скрипт для определения мобильных устройств -->
+    <script src="js/detect.js"></script>
+    
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Мета-тег для адаптивности -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        /* Скрываем фреймы на мобильных */
+        @media only screen and (max-width: 768px) {
+            frameset, frame, noframes {
+                display: none;
+            }
+            
+            .mobile-redirect {
+                display: block;
+                padding: 20px;
+                text-align: center;
+                font-family: Arial, sans-serif;
+            }
+            
+            .mobile-redirect a {
+                display: inline-block;
+                background: #3498db;
+                color: white;
+                padding: 15px 30px;
+                text-decoration: none;
+                border-radius: 5px;
+                margin: 10px;
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<frameset rows="15%,*,10%" frameborder="1" bordercolor="#2c3e50">
+    <frame src="header.html" name="header" scrolling="no">
+    
+    <frameset cols="20%,*">
+        <frame src="menu.html" name="menu">
+        <frame src="main.html" name="content">
+    </frameset>
+    
+    <frame src="footer.html" name="footer" scrolling="no">
+    
+    <noframes>
+        <body>
+            <div class="mobile-redirect">
+                <h2>Ваш браузер не поддерживает фреймы</h2>
+                <p>Пожалуйста, обновите браузер или перейдите на мобильную версию сайта:</p>
+                <a href="mobile.html">Открыть мобильную версию сайта</a>
+                <br>
+                <a href="main.html" target="_blank">Открыть без фреймов</a>
+            </div>
+        </body>
+    </noframes>
+</frameset>
+</html>

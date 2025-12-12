@@ -1,0 +1,224 @@
+/* Адаптивные стили для всех устройств */
+
+/* Общие медиа-запросы */
+@media (max-width: 1200px) {
+    /* Для планшетов и небольших ноутбуков */
+    body {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Для мобильных устройств и планшетов */
+    
+    /* Скрываем фреймы на мобильных */
+    frameset, frame {
+        display: none !important;
+    }
+    
+    /* Показываем мобильную версию */
+    .mobile-version {
+        display: block !important;
+    }
+    
+    /* Адаптивные таблицы */
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    
+    /* Адаптивные изображения */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    /* Адаптивные навигационные меню */
+    .desktop-nav {
+        display: none;
+    }
+    
+    .mobile-nav {
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Для маленьких мобильных устройств */
+    body {
+        font-size: 13px;
+    }
+    
+    h1 {
+        font-size: 24px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    .container {
+        padding: 10px;
+    }
+    
+    /* Улучшаем кнопки для касания */
+    button, 
+    a.btn, 
+    input[type="submit"] {
+        min-height: 44px; /* Минимальная высота для удобного касания */
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+    
+    /* Увеличиваем поля ввода */
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    textarea {
+        font-size: 16px; /* Предотвращает масштабирование в iOS */
+        min-height: 44px;
+    }
+}
+
+/* Адаптивные фреймы (если используются) */
+@media (max-width: 768px) {
+    frameset {
+        display: block !important;
+    }
+    
+    frame {
+        position: static !important;
+        height: auto !important;
+        width: 100% !important;
+    }
+}
+
+/* Адаптивная типографика */
+@media (min-width: 768px) {
+    body {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        font-size: 18px;
+        line-height: 1.8;
+    }
+}
+
+/* Адаптивные сетки */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 10px;
+    }
+}
+
+/* Адаптивные карточки */
+.card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+@media (max-width: 768px) {
+    .card {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+/* Адаптивные изображения с обтеканием */
+.img-float-left,
+.img-float-right {
+    max-width: 100%;
+    margin: 10px;
+}
+
+@media (max-width: 768px) {
+    .img-float-left,
+    .img-float-right {
+        float: none !important;
+        display: block;
+        margin: 10px auto;
+    }
+}
+
+/* Адаптивные таблицы */
+.responsive-table {
+    width: 100%;
+    overflow-x: auto;
+    margin: 20px 0;
+}
+
+.responsive-table table {
+    min-width: 600px;
+}
+
+@media (max-width: 768px) {
+    .responsive-table {
+        border: none;
+    }
+    
+    .responsive-table th,
+    .responsive-table td {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+/* Адаптивное меню навигации */
+.nav-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .nav-menu a {
+        display: block;
+        padding: 10px;
+        background: #f5f5f5;
+        border-radius: 5px;
+        text-align: center;
+    }
+}
+
+/* Адаптивные iframe */
+.iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 соотношение */
+    height: 0;
+    overflow: hidden;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Мета-тег viewport для адаптивности */
+.viewport-m

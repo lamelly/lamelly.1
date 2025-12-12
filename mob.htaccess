@@ -1,0 +1,8 @@
+# Файл .htaccess для определения мобильных устройств
+RewriteEngine On
+
+# Определяем мобильные устройства
+RewriteCond %{HTTP_USER_AGENT} "android|blackberry|iphone|ipod|iemobile|opera mobile|palmos|webos|googlebot-mobile" [NC]
+RewriteCond %{REQUEST_URI} !^/mobile\.html
+RewriteCond %{REQUEST_URI} !^/mobile-pages/
+RewriteRule ^(.*)$ /mobile.html [L,R=302]
