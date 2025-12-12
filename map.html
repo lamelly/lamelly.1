@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интерактивная карта</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Интерактивная карта защиты информации</h1>
+    
+    <p>Нажмите на различные области схемы для получения информации:</p>
+    
+    <div align="center">
+        <img src="images/security-map.png" alt="Карта защиты" usemap="#securitymap" width="600">
+        
+        <map name="securitymap">
+            <!-- Эти координаты нужно настроить под конкретное изображение -->
+            <!-- Пример координат для прямоугольных областей -->
+            <area shape="rect" coords="48,31,263,150" href="methods.html#encryption" target="content" alt="Шифрование">
+            <area shape="rect" coords="307,31,521,150" href="methods.html#technical" target="content" alt="Firewall">
+            <area shape="rect" coords="49,160,261,280" href="threats.html" target="content" alt="Угрозы">
+            <area shape="rect" coords="308,160,522,280" href="legislation.html" target="content" alt="Законодательство">
+        </map>
+        
+        <br>
+        <small><em>Карта создана с помощью GeoHTML</em></small>
+    </div>
+    
+    <h3>Области карты:</h3>
+    <ul>
+        <li><strong>Красная область</strong> &ndash; Методы шифрования</li>
+        <li><strong>Синяя область</strong> &ndash; Межсетевые экраны</li>
+        <li><strong>Зелёная область</strong> &ndash; Угрозы безопасности</li>
+        <li><strong>Жёлтая область</strong> &ndash; Законодательная база</li>
+    </ul>
+    
+    <p>Используйте карту для навигации по разделам сайта!</p>
+</body>
+</html>

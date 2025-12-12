@@ -1,0 +1,19 @@
+website/
+│
+├── images/
+│   ├── logo.png
+│   ├── background.jpg
+│   ├── firewall.png
+│   ├── encryption.png
+│   └── cyber-security.jpg
+│
+├── styles.css
+├── index.html
+├── header.html
+├── menu.html
+├── footer.html
+├── main.html
+├── methods.html
+├── threats.html
+├── legislation.html
+└── map.html

@@ -1,0 +1,166 @@
+/* Основные стили для сайта */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 10px;
+    padding: 5px;
+}
+
+/* Стили для шапки */
+.header {
+    background-color: #b0c4de;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 1.5em;
+    margin: 5px 0;
+}
+
+.header h2 {
+    font-size: 1.2em;
+    font-style: italic;
+    margin: 5px 0;
+}
+
+/* Стили для меню */
+.menu {
+    background-color: #b0c4de;
+    color: white;
+    padding: 15px;
+    height: 100%;
+}
+
+.menu a:link, .menu a:visited {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #3498db;
+    text-decoration: underline;
+}
+
+.menu ul, .menu ol {
+    padding-left: 20px;
+}
+
+.menu li {
+    margin: 8px 0;
+}
+
+/* Основное содержание */
+h1, h2, h3, h4 {
+    color: #2c3e50;
+    font-family: 'Georgia', serif;
+}
+
+h1 {
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+.content-box {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+/* Таблицы */
+table {
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+
+th {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+/* Специальные элементы */
+.special-chars {
+    font-size: 0.9em;
+    color: #7f8c8d;
+    margin-top: 20px;
+}
+
+.formula {
+    font-family: 'Courier New', monospace;
+    background-color: #f4f4f4;
+    padding: 15px;
+    margin: 15px 0;
+    border-left: 3px solid #e74c3c;
+}
+
+.law-article {
+    background-color: #fff8dc;
+    padding: 15px;
+    margin: 15px;
+    border: 1px dashed #ccc;
+}
+
+blockquote {
+    font-style: italic;
+    border-left: 4px solid #3498db;
+    padding-left: 15px;
+    margin: 20px;
+    color: #555;
+}
+
+/* Оглавление */
+.toc {
+    background-color: #ecf0f1;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 15px 0;
+}
+
+.attack-types h4 {
+    color: #c0392b;
+    margin-bottom: 5px;
+}
+
+/* Футер */
+.footer {
+    background-color: #b0c4de;
+    color: white;
+    padding: 10px;
+    font-size: 0.9em;
+}
+
+.footer a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Ссылки навигации */
+a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #e74c3c;
+}
+
+/* Для кода */
+code {
+    background-color: #f4f4f4;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+}
